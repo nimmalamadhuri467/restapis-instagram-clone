@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <title>Edit Post</title>
+</head >
+<link rel="icon" href="/favicon.png" type="image/png">
+
+<body>
+  <h1>✏️ Edit Post</h1>
+  <form action="/posts/<%= post.id %>?_method=PATCH" method="POST">
+    <textarea name="content" required><%= post.content %></textarea><br>
+    <button>Update</button>
+  </form>
+  <a href="/posts">⬅ Back</a>
+</body>
+</html>
